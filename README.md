@@ -35,5 +35,4 @@
   ```
   embs = torch.from_numpy(numpyEmbMatrix.take(
     idxsForEmbeddings.squeeze(1), axis=0)).cuda()
-
   ```
