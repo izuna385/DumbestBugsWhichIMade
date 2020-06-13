@@ -36,11 +36,3 @@
   embs = torch.from_numpy(numpyEmbMatrix.take(
     idxsForEmbeddings.squeeze(1), axis=0)).cuda()
   ```
-
-  ## AllenNLP
-
-  * Do not wrap split word with double Token class.
-
-    `wrapped = Token(Token("###ly"))`
-
-    * This cause deletion of sub-word information and still do **not** return error.
